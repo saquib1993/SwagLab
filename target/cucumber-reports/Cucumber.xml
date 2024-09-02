@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="35.153" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login" name="Add to Cart and Verify Items" time="23.141">
+<system-out><![CDATA[
+Given User is on Login Page.................................................passed
+When User entered "<username>" and "<pass>".................................passed
+Then User is on product page................................................passed
+Given User add items in cart................................................passed
+When User click on cart button..............................................passed
+Then User Verify Items......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Checkout and Payment" time="11.534">
+<system-out><![CDATA[
+Given User is on Login Page.................................................passed
+When User entered "<username>" and "<pass>".................................passed
+Then User is on product page................................................passed
+Given User is on cart.......................................................passed
+When User click on checkout button..........................................passed
+And User enter checkout info................................................passed
+And User click on continue button...........................................passed
+And User click on Finish....................................................passed
+Then User is on  successfull order Page.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

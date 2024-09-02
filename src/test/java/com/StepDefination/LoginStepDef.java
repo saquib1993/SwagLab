@@ -6,6 +6,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import com.PageFactory.AddToCart;
 import com.PageFactory.Checkout;
@@ -97,7 +98,7 @@ public class LoginStepDef {
 
 	@Then("User is on  successfull order Page")
 	public void user_is_on_successfull_order_page() {
-	    
+	    co.verify_order_placed();
 	}
 
 

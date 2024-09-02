@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class Checkout {
 	
@@ -26,6 +27,8 @@ public class Checkout {
 	
 	@FindBy(id="finish")
 	WebElement btn_finish;
+	@FindBy (xpath="//h2[@class='complete-header']")
+	WebElement success;
 	
 	public Checkout(WebDriver driver) {
 		this.driver = driver;
@@ -48,6 +51,13 @@ public class Checkout {
 	
 	public void click_finish() {
 		btn_finish.click();
+	}
+	
+	public void verify_order_placed() {
+		String actTitle="Thank you for your order!";
+		String expTitle=success.getText();
+		
+		Assert.assertEquals(actTitle, expTitle);
 	}
 
 }

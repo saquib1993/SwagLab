@@ -9,9 +9,35 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">30</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">335</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.TestRunner.TestRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1725277083705</td><td rowspan="1">242</td></tr></tbody>
 </table>
-<h2>Surefire test</h2></body>
+<h2>Surefire test</h2><h3 id="m0">com.TestRunner.TestRunner#setUpClass</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@2ca923bb</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Couldn&apos;t create a file output stream for &apos;target\cucumber-reports&apos;.
+Make sure the the file isn&apos;t a directory.
+
+Note: This usually happens when plugins write to colliding paths.
+For example: &apos;json:target/cucumber/report.json, html:target/cucumber&apos;
+You can fix this by making the paths do no collide.
+For example: &apos;json:target/cucumber/report.json, html:target/cucumber/report.html&apos;
+The details are in the stack trace below:
+	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:240)
+	at io.cucumber.core.plugin.PluginFactory.openStream(PluginFactory.java:199)
+	at io.cucumber.core.plugin.PluginFactory.convert(PluginFactory.java:166)
+	at io.cucumber.core.plugin.PluginFactory.instantiate(PluginFactory.java:99)
+	at io.cucumber.core.plugin.PluginFactory.create(PluginFactory.java:63)
+	at io.cucumber.core.plugin.Plugins.createPlugins(Plugins.java:32)
+	at io.cucumber.core.plugin.Plugins.&lt;init&gt;(Plugins.java:25)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:108)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.io.FileNotFoundException: D:\Selenium\SwagLab\target\cucumber-reports (Access is denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:184)
+	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:237)
+	... 39 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
 </html>
