@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="35.153" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Login" name="Add to Cart and Verify Items" time="23.141">
+<testsuite name="Cucumber" time="73.837" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login" name="Add to Cart and Verify Items" time="60.17">
 <system-out><![CDATA[
 Given User is on Login Page.................................................passed
 When User entered "<username>" and "<pass>".................................passed
@@ -10,7 +10,7 @@ When User click on cart button..............................................pass
 Then User Verify Items......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login" name="Checkout and Payment" time="11.534">
+<testcase classname="Login" name="Checkout and Payment" time="13.191">
 <system-out><![CDATA[
 Given User is on Login Page.................................................passed
 When User entered "<username>" and "<pass>".................................passed

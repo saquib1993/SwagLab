@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 02 17:05:55 IST 2024</td>
+<td>Started on:</td><td>Fri Sep 06 20:38:07 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (509 ms)</td>
+<tr><td>Total time:</td><td>75 seconds (75866 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,85 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TestRunner.TestRunner.setUpClass()'><b>setUpClass</b><br>Test class: com.TestRunner.TestRunner<br>Parameters: org.testng.TestRunner@3eb77ea8</td>
-<td><div><pre>java.lang.IllegalArgumentException: Couldn&apos;t create a file output stream for &apos;target\cucumber-reports&apos;.
-Make sure the the file isn&apos;t a directory.
-
-Note: This usually happens when plugins write to colliding paths.
-For example: &apos;json:target/cucumber/report.json, html:target/cucumber&apos;
-You can fix this by making the paths do no collide.
-For example: &apos;json:target/cucumber/report.json, html:target/cucumber/report.html&apos;
-The details are in the stack trace below:
-	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:240)
-	at io.cucumber.core.plugin.PluginFactory.openStream(PluginFactory.java:199)
-	at io.cucumber.core.plugin.PluginFactory.convert(PluginFactory.java:166)
-	at io.cucumber.core.plugin.PluginFactory.instantiate(PluginFactory.java:99)
-	at io.cucumber.core.plugin.PluginFactory.create(PluginFactory.java:63)
-	at io.cucumber.core.plugin.Plugins.createPlugins(Plugins.java:32)
-	at io.cucumber.core.plugin.Plugins.&lt;init&gt;(Plugins.java:25)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:108)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.io.FileNotFoundException: D:\Selenium\SwagLab\target\cucumber-reports (Access is denied)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:235)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:184)
-	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:237)
-	... 34 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1834361038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1834361038'><pre>java.lang.IllegalArgumentException: Couldn&apos;t create a file output stream for &apos;target\cucumber-reports&apos;.
-Make sure the the file isn&apos;t a directory.
-
-Note: This usually happens when plugins write to colliding paths.
-For example: &apos;json:target/cucumber/report.json, html:target/cucumber&apos;
-You can fix this by making the paths do no collide.
-For example: &apos;json:target/cucumber/report.json, html:target/cucumber/report.html&apos;
-The details are in the stack trace below:
-	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:240)
-	at io.cucumber.core.plugin.PluginFactory.openStream(PluginFactory.java:199)
-	at io.cucumber.core.plugin.PluginFactory.convert(PluginFactory.java:166)
-	at io.cucumber.core.plugin.PluginFactory.instantiate(PluginFactory.java:99)
-	at io.cucumber.core.plugin.PluginFactory.create(PluginFactory.java:63)
-	at io.cucumber.core.plugin.Plugins.createPlugins(Plugins.java:32)
-	at io.cucumber.core.plugin.Plugins.&lt;init&gt;(Plugins.java:25)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:108)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.io.FileNotFoundException: D:\Selenium\SwagLab\target\cucumber-reports (Access is denied)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:235)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:184)
-	at io.cucumber.core.plugin.PluginFactory.createFileOutputStream(PluginFactory.java:237)
-	... 34 more
-</pre></div></td>
-<td>0</td>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checkout and Payment", "Login"</td>
+<td></td>
+<td>13</td>
+<td>com.TestRunner.TestRunner@cc43f62</td></tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add to Cart and Verify Items", "Login"</td>
+<td></td>
+<td>60</td>
 <td>com.TestRunner.TestRunner@cc43f62</td></tr>
 </table><p>
 </body>
